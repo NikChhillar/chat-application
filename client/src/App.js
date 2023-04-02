@@ -9,7 +9,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Dashboard />} />
-        <Route path='/a' element={<Form />} />
+        <Route path='/users/sign_in' element={<Form isSignInPage={true} />} />
+        <Route path='/users/sign_up' element={<Form isSignInPage={false} />} />
       </Routes>
     </BrowserRouter>
   );
